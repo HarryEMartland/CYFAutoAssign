@@ -10,7 +10,8 @@ deploy:
   region: "eu-west-1"
   role: "arn:aws:iam::818032293643:role/service-role/CYFEmailChaseLambda"
   runtime: "nodejs6.10"
-  handler_name: "src/index.handler"
+  module_name: "src/index"
+  handler_name: "handler"
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
   on:
