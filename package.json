@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "zip": "zip -r app.zip src node_modules",
+    "zip": "npm prune --production && rm app.zip && zip -r app.zip src node_modules",
     "start": "node -e 'require(\"./src/index.js\").handler(null, null, ()=>{console.error})'"
   },
   "repository": {
