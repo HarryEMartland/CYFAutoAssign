@@ -4,6 +4,8 @@ node_js:
 cache:
   directories:
     - "node_modules"
+before_deploy:
+  - npm prune --production
 deploy:
   provider: lambda
   function_name: "CYFAutoAssign"
