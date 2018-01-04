@@ -39,5 +39,6 @@ module.exports = {
     'GLAGOW': SCOTLAND,
     'EDINBURGH': SCOTLAND,
     'BRIGHTON': SCOTLAND,
+    'RENFREW': SCOTLAND,
 
 };
