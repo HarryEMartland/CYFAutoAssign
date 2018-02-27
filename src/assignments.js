@@ -1,6 +1,7 @@
 const MANCHESTER = '2643534';
 const SCOTLAND = '2163145';
 const LONDON = '2581155';
+const NEWCASTLE = LONDON; //this is london for now until they get set up
 
 module.exports = {
 
@@ -42,5 +43,9 @@ module.exports = {
     'EDINBURGH': SCOTLAND,
     'BRIGHTON': SCOTLAND,
     'RENFREW': SCOTLAND,
+
+    'NEWCASTLE': NEWCASTLE,
+    'YARM': NEWCASTLE,
+    'MIDDLESBROUGH': NEWCASTLE,
 
 };
