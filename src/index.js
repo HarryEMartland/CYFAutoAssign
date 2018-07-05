@@ -50,7 +50,7 @@ function moveDeal(dealId, assignment) {
 function processDeal(deal) {
     return findPersion(deal.person_id.value)
         .then(function (person) {
-            const assignment = assignments[person[personCity].toUpperCase()];
+            const assignment = assignments[person[personCity].trim().toUpperCase()];
             if (assignment) {
                 return moveDeal(deal.id, assignment).then(function () {
                     console.log("Moved deal " + deal.id + ' to user ' + assignment)
